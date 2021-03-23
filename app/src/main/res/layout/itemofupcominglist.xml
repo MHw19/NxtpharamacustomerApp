@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="41dp"
+        android:text="Doctor Name"
+        android:textColor="#070707"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="101dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:text="Date"
+        android:textColor="#070707"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="103dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:text="Time"
+        android:textColor="#070707"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="102dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="21dp"
+        android:text="Status"
+        android:textColor="#070707"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+    <Button
+        android:id="@+id/upcanclebtn"
+        android:layout_width="145dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="16dp"
+        android:text="cancle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upsstatus"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/upsdocname"
+        android:layout_width="189dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="63dp"
+        android:textColor="#232121"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/upsdate"
+        android:layout_width="185dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="67dp"
+        android:textColor="#232121"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upsdocname" />
+
+    <TextView
+        android:id="@+id/upstime"
+        android:layout_width="179dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="70dp"
+        android:textColor="#232121"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upsdate" />
+
+    <TextView
+        android:id="@+id/upsstatus"
+        android:layout_width="187dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="65dp"
+        android:textColor="#232121"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upstime" />
+</androidx.constraintlayout.widget.ConstraintLayout>

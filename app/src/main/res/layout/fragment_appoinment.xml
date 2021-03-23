@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="320dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="72dp"
+        android:text="My appoinments"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="183dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="180dp"
+        android:text="Upcoming Appointments"
+        android:textColor="#131313"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="153dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="212dp"
+        android:text="History Appointments"
+        android:textColor="#0C0C0C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upcominglist" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/upcominglist"
+        android:layout_width="377dp"
+        android:layout_height="215dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/historylist"
+        android:layout_width="372dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

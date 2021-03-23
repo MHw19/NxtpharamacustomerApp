@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">NxtPharma</string>
+    <string name="txt1">Trusted online pharmacy platform..</string>
+    <string name="Ltxt1">User Name</string>
+    <string name="Ltxt2">Password</string>
+    <string name="LEtxt1">Email</string>
+    <string name="LEtxt2">Password</string>
+    <string name="Ltxt3">Don`t You Have Account?</string>
+    <string name="Lbtn1">Sign In</string>
+    <string name="Lbtn2"><u>Sign Up</u></string>
+    <string name="Stxt1"><u>Sign Up </u></string>
+    <string name="Stxt2">Full Name</string>
+    <string name="Stxt3">Mobile No</string>
+    <string name="Stxt4">Birth Date</string>
+    <string name="Stxt5">User Name</string>
+    <string name="Stxt6">Password</string>
+    <string name="Stxt7">Already You Have Account?</string>
+    <string name="Sbtn1"><u>Log In</u></string>
+    <string name="Sbtn2">Sign Up</string>
+    <string name="uplodbtn1">Cammera</string>
+    <string name="uplodbtn2">Gallery</string>
+    <string name="uplodbtn3">Existing</string>
+    <string name="uplodbtn4">Request For Quotation</string>
+    <string name="uplodtxt1">Description</string>
+    <string name="uplodtxt2">Type Here...</string>
+
+    <string name="Remindtxt1">Take Medicine</string>
+
+
+    <string name="Remindtxt2">Description about medicine</string>
+    <string name="Remindbtn1">Save Reminder</string>
+    <string name="docapointbtn1">Appoinments</string>
+    <string name="docapointheadin1">Find your Available Doctor </string>
+    <string name="docapointtitle">Find and Book </string>
+    <string name="timeslottitle">Select a Time slot </string>
+    <string name="timeslottxt1">Morning Session 7.00am to 8.30am </string>
+    <string name="timeslottxt2">Afternoon Session 12.00pm to 2.00pm </string>
+    <string name="timeslottxt3">Evening Session 5.00pm to 8.30pm </string>
+    <string name="timeslotbtn">Confirm </string>
+    <string name="homepagehead1">Popular Categories </string>
+    <string name="homepagebtn1">Vitamin supplement </string>
+
+    <string name="homepagebtn2">Nutritional Drink </string>
+    <string name="homepagebtn3">personal care </string>
+    <string name="homepagebtn7">Daily Essentials </string>
+    <string name="homepagebtn4">Sanitizer Handwash </string>
+
+    <string name="homepagebtn5">Ayurveda </string>
+    <string name="homepagebtn6">Mothercare </string>
+    <string name="userverifyhead1">Email verification </string>
+
+
+    <string name="userverifybtn1">Verify </string>
+    <string name="userverifytxt1">Enter Code</string>
+    <string name="userverifybtn2">Resend Code </string>
+    <string name="navigation_drawer_open">open navigation drawer</string>
+
+
+    <string name="navigation_drawer_close">close navigation drawer</string>
+    <string name="deletebtn"> X  Delete</string>
+    <string name="aboutus">
+
+        NXTPHARAMA bring to you online pharamacy platform,which can be accesed for your health requirement.we are trying to make and practise good healthcare practise through our platform to you.
+        Get your ayurvedic,vitamin and suppliment,personal care sanitizer,mothercare and other health related product deliverd at home.Doctor Appoinment?Upload prescription?Yes,Those too in comport for your home.we got that covered too.
+
+
+
+    </string>
+
+    <string-array name="filteroptions">
+
+        <item>none </item>
+        <item>Price Low-High </item>
+        <item>Price High-Low </item>
+
+
+    </string-array>
+
+</resources>

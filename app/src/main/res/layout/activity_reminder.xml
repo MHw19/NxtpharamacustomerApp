@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reminder">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="120dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="240dp"
+        android:text="@string/Remindtxt1"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txttakemedicine"
+        android:layout_width="331dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="@string/Remindtxt2"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/timebtn"
+        android:layout_width="88dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_baseline_access_time_24black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txttakemedicine" />
+
+    <TextView
+        android:id="@+id/txttime"
+        android:layout_width="184dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="44dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txttakemedicine" />
+
+    <Button
+        android:id="@+id/datebtn"
+
+        android:drawableTop="@drawable/ic_baseline_calendar_today_24"
+        android:layout_width="91dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timebtn" />
+
+    <TextView
+        android:id="@+id/txtdate"
+        android:layout_width="199dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txttime" />
+
+    <Button
+        android:id="@+id/remindbtn"
+        android:layout_width="339dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="184dp"
+        android:text="@string/Remindbtn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datebtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

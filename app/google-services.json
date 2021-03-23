@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "293816815019",
+    "project_id": "nxt-pharma",
+    "storage_bucket": "nxt-pharma.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293816815019:android:d00408fae05eebd59f96ee",
+        "android_client_info": {
+          "package_name": "com.lk.nxt_pharma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293816815019-29n7r25lm7l8se839arjlg0e0tr3qqib.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lk.nxt_pharma",
+            "certificate_hash": "f7268e53c9d10c3665e19d29a4acd261f1ec57d0"
+          }
+        },
+        {
+          "client_id": "293816815019-kv6rfvm3kt2321fccu10eki4br5m52a5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB50pI7vw8KTesEvc9H3UXat7TzsvpwJME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293816815019-kv6rfvm3kt2321fccu10eki4br5m52a5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/reminder"
+        android:layout_width="121dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_baseline_access_time_24black"
+        android:text="Reminder"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/appoint_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="96dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_ayurveda"
+        android:text="@string/docapointbtn1"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="204dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/homepagehead1"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appoint_btn" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="111dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="53dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_hand_sanitizer"
+        android:text="@string/homepagebtn4"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="102dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="17dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_nuturional_drink"
+        android:text="@string/homepagebtn1"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_personal"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="121dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_daily_essential"
+        android:text="@string/homepagebtn7"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button13" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="108dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="4dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_ayurveda"
+        android:text="@string/homepagebtn5"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/button18"
+        app:layout_constraintTop_toBottomOf="@+id/button14" />
+
+    <Button
+        android:id="@+id/btn_personal"
+        android:layout_width="100dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_beauty_care"
+        android:text="@string/homepagebtn3"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appoint_btn"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="107dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_baby_mother_care"
+        android:text="@string/homepagebtn6"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_personal" />
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="330dp"
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button15"
+        tools:ignore="MissingConstraints"></com.google.android.gms.ads.AdView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

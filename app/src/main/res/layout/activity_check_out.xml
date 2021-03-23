@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductCart.checkOut">
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.lk.nxt_pharma.MapsFragment"
+        android:layout_width="339dp"
+        android:layout_height="330dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="272dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Check Out"
+        android:textColor="#0C0C0C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="86dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="32dp"
+        android:text="Total "
+        android:textColor="#D31D1D"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment" />
+
+    <TextView
+        android:id="@+id/checktotal"
+        android:layout_width="188dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="52dp"
+        android:textColor="#171616"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="108dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="9dp"
+        android:text="Shipping Cost"
+        android:textColor="#D31D1D"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+    <TextView
+        android:id="@+id/checkshipcost"
+        android:layout_width="188dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="52dp"
+        android:textColor="#171616"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checktotal" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="93dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="12dp"
+        android:text="Gross Total"
+        android:textColor="#D31D1D"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+    <TextView
+        android:id="@+id/checkgrosstotal"
+        android:layout_width="187dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="52dp"
+        android:textColor="#171616"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkshipcost" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="314dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView44">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Cash On Delivery" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:text="card payment" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/proceedbtn"
+        android:layout_width="186dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="55dp"
+        android:text="Proceed Order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+</androidx.constraintlayout.widget.ConstraintLayout>

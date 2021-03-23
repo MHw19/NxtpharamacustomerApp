@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:ignore="MissingClass">
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="379dp"
+        android:layout_height="172dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"></com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="163dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="216dp"
+        android:text="News Events"
+        android:textColor="#0E0E0E"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adView" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="164dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView54"
+        app:srcCompat="@drawable/ic_sale" />
+
+    <TextView
+        android:id="@+id/eventdiscount"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:textAlignment="center"
+        android:textColor="#800808"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <TextView
+        android:id="@+id/eventtitle"
+        android:layout_width="192dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="#FF5722"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/adView" />
+
+    <TextView
+        android:id="@+id/eventcategory"
+        android:layout_width="190dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="18dp"
+        android:textColor="#FFC107"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/eventtitle" />
+
+    <TextView
+        android:id="@+id/eventduration"
+        android:layout_width="189dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="19dp"
+        android:textColor="#4CAF50"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eventdiscount"
+        app:layout_constraintTop_toBottomOf="@+id/eventcategory" />
+
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="119dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_hand_sanitizer"
+        android:text="@string/homepagebtn4"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventdiscount" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="100dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="1dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_nuturional_drink"
+        android:text="@string/homepagebtn1"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_personal"
+        app:layout_constraintTop_toBottomOf="@+id/eventdiscount" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="111dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_daily_essential"
+        android:text="@string/homepagebtn7"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button13" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="109dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_ayurveda"
+        android:text="@string/homepagebtn5"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/button15"
+        app:layout_constraintTop_toBottomOf="@+id/button14" />
+
+    <Button
+        android:id="@+id/btn_personal"
+        android:layout_width="113dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="36dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_beauty_care"
+        android:text="@string/homepagebtn3"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventduration" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="97dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="43dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_baby_mother_care"
+        android:text="@string/homepagebtn6"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_personal" />
+
+
+    //ca-app-pub-7120458949370930/7192580187
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

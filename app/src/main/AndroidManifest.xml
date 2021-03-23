@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lk.nxt_pharma">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_first_aid_kit__1_"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_first_aid_kit__1_"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Nxt_Pharma">
+        <activity android:name=".aboutus.userprofile"></activity>
+        <activity android:name=".Shoppingorders" />
+        <activity android:name=".aboutus.Aboutus" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity android:name=".ProductCart.checkOut" />
+        <activity android:name=".ProductCart.Product_cart" />
+        <activity android:name=".products.Product_list">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home_page" />
+        </activity>
+        <activity android:name=".Order_prescription" />
+        <activity android:name=".signup.Verifyemail" />
+        <activity
+            android:name=".appointments.Select_time_slot"
+            android:label="@string/timeslottitle"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".appointments.Book_doctor" />
+        </activity>
+        <activity
+            android:name=".appointments.Book_doctor"
+            android:label="@string/docapointtitle"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".appointments.Find_doctors" />
+        </activity>
+        <activity android:name=".appointments.Find_doctors" />
+        <activity android:name=".Reminder" />
+        <activity android:name=".Upload_prescription" />
+        <activity
+            android:name=".Home_page"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".signup.SignUp" />
+        <activity
+            android:name=".Login"
+            android:noHistory="true" />
+        <activity
+            android:name=".Coverpage"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7120458949370930~6231401049" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <receiver android:name=".boardcast.AlertReceiver" />
+
+        <service android:name=".FCMIHelper.FCMIHelper">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
